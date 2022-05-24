@@ -60,6 +60,12 @@ namespace Test_Slavíček
             Tatra.Jet();
             Zobraz(Tatra, txtbox1);
         }
+
+        private void btn_Vysipat_Click(object sender, RoutedEventArgs e)
+        {
+            Tatra.Vysipat();
+            Zobraz(Tatra,txtbox1);
+        }
     }
 
 }
