@@ -57,19 +57,6 @@ namespace Test_Slavíček
         {
             stav_paliva -= 5;
             stav_Tachometru += 50;
-            if (stav_paliva < 0)
-            {
-                stav_Tachometru -=50 ;
-                stav_paliva = 0;
-                
-                
-            }
-            if (stav_paliva > -1)
-                stav_paliva = 0;
-
-
-
-         
             if (naklad == 500)
             {
                 stav_paliva -= 2;
@@ -93,6 +80,13 @@ namespace Test_Slavíček
             else if (naklad == 3000)
             {
                 stav_paliva -= 12;
+            }
+            if (stav_paliva < 0)
+            {
+                stav_Tachometru -= 50;
+                stav_paliva = 0;
+
+
             }
 
 
