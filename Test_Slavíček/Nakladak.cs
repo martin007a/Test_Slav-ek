@@ -52,17 +52,15 @@ namespace Test_Slavíček
         public void Jet()
         {
             stav_paliva -= 5;
+            stav_Tachometru = 0;
             if (stav_paliva < 0)
             {
                 stav_paliva = 0;
             }
             else
             {
-                stav_Tachometru += 50;
-               if (stav_Tachometru < 100)
-                {
-                    stav_Tachometru = 100;
-                }
+                stav_Tachometru = 50;
+
             }
            
             
