@@ -63,7 +63,7 @@ namespace Test_Slavíček
 
         private void btn_Vysipat_Click(object sender, RoutedEventArgs e)
         {
-            Tatra.Vysipat();
+            Tatra.Vysypat();
             Zobraz(Tatra,txtbox1);
         }
     }

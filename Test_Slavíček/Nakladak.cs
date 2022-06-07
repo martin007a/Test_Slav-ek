@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace Test_Slavíček
 {
+    
     public class Nakladak
     {
+        
         private int naklad;
         private int stav_paliva;
         private int stav_Tachometru;
         private int nosnost;
 
+        
 
         public string Jmeno { get; set; }
         public int Spotreba { get; set; }
@@ -20,22 +23,25 @@ namespace Test_Slavíček
         public int Stav_Paliva { get => stav_paliva; }
         public int Stav_Tachometru { get => stav_Tachometru; }
         public int Nosnost { get => nosnost; }
-
+        public int Objem_Nadrze { get; set; }   
+        
         public Nakladak()
         {
             Jmeno = " ";
-            Spotreba = 5;
+            Spotreba = 5; //100Km
             naklad = 0;
             stav_paliva = 30;
             stav_Tachometru = 0;
             nosnost = 3000;
+            Objem_Nadrze = 75;
+            
 
 
         }
         public void Natanokovat()
         {
-            stav_paliva += 5;
-            if (stav_paliva > 75)
+            stav_paliva += 15;
+            if (stav_paliva > Objem_Nadrze )
             {
                 stav_paliva = 75;
             }
@@ -48,51 +54,26 @@ namespace Test_Slavíček
         public void Nalozit()
         {
             naklad += 500;
-            if (naklad > 3000)
+            if (naklad > nosnost)
             {
                 naklad = 3000;
             }
         }
         public void Jet()
         {
-            stav_paliva -= 5;
-            stav_Tachometru += 50;
-            if (naklad == 500)
-            {
-                stav_paliva -= 2;
-            }
-            else if (naklad == 1000)
-            {
-                stav_paliva -= 4;
-            }
-            else if (naklad == 1500)
-            {
-                stav_paliva -= 6;
-            }
-            else if (naklad == 2000)
-            {
-                stav_paliva -= 8;
-            }
-            else if (naklad == 2500)
-            {
-                stav_paliva -= 10;
-            }
-            else if (naklad == 3000)
-            {
-                stav_paliva -= 12;
-            }
+            stav_paliva -= Spotreba + (naklad / 500);
+            stav_Tachometru += 100;
             if (stav_paliva < 0)
             {
-                stav_Tachometru -= 50;
                 stav_paliva = 0;
-
-
+                stav_Tachometru = stav_Tachometru;
             }
-
+          
 
 
         }
-        public void Vysipat()
+
+        public void Vysypat()
         {
             naklad = 0;
         }
