@@ -26,8 +26,13 @@ namespace Test_Slavíček
         {
             InitializeComponent();
             Tatra = new Nakladak();
-            Tatra.Jmeno = "Tatra";
+            Tatra.Jmeno = "tatra_Pavel";
             Zobraz(Tatra, txtbox1);
+            
+            InitializeComponent();
+            Tatra = new Nakladak();
+            Tatra.Jmeno = "tara_ René";
+            Zobraz(Tatra, txtbox2);
 
             
         }

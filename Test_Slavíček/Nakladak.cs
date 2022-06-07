@@ -14,9 +14,7 @@ namespace Test_Slavíček
         private int stav_paliva;
         private int stav_Tachometru;
         private int nosnost;
-
         
-
         public string Jmeno { get; set; }
         public int Spotreba { get; set; }
         public int Naklad { get => naklad; }
@@ -34,10 +32,9 @@ namespace Test_Slavíček
             stav_Tachometru = 0;
             nosnost = 3000;
             Objem_Nadrze = 75;
-            
-
-
+           
         }
+       
         public void Natanokovat()
         {
             stav_paliva += 15;
@@ -66,8 +63,10 @@ namespace Test_Slavíček
             if (stav_paliva < 0)
             {
                 stav_paliva = 0;
-                stav_Tachometru = stav_Tachometru;
+                stav_Tachometru -= 100;
             }
+          
+          
           
 
 
@@ -80,4 +79,8 @@ namespace Test_Slavíček
         
 
     }
+    
+    
+
+    
 }

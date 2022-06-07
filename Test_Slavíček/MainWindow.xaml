@@ -21,12 +21,12 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
-        <Button Name="btn_Jet" Content="Jet" HorizontalAlignment="Center" Height="40" Grid.Row="4" VerticalAlignment="Center" Width="100" Click="btn_Jet_Click"/>
-        <Button Name="btn_Naložit" Grid.Column="1" Content="Naložit" HorizontalAlignment="Stretch" Height="40" Grid.Row="4" VerticalAlignment="Center" Width="100" Click="btn_Naložit_Click"/>
-        <Button Name="btn_Tankovat" Grid.Column="2" Content="Natankovat" HorizontalAlignment="Center" Height="40" Grid.Row="4" VerticalAlignment="Center" Width="100" Click="btn_Tankovat_Click"/>
-        <TextBox Name="txtbox1" Grid.ColumnSpan="2" Margin="50,10,169,36" Grid.RowSpan="4" TextWrapping="Wrap" Text="TextBox"/>
-        <Button x:Name="btn_Vysipat" Grid.Column="3" Content="Vysipat" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="40" Width="100" Click="btn_Vysipat_Click"/>
-        <TextBox HorizontalAlignment="Left" Margin="-119,9,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btn_Jet" Content="Jet" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="100" Click="btn_Jet_Click" Grid.Column="1" Margin="90,22,0,0"/>
+        <Button Name="btn_Naložit" Grid.Column="1" Content="Naložit" Height="40" Grid.Row="1" VerticalAlignment="Top" Width="100" Click="btn_Naložit_Click" Margin="90,0,0,0"/>
+        <Button Name="btn_Tankovat" Grid.Column="1" Content="Natankovat" HorizontalAlignment="Left" Height="40" Grid.Row="2" VerticalAlignment="Center" Width="100" Click="btn_Tankovat_Click" Margin="90,0,0,0"/>
+        <TextBox Name="txtbox1" Grid.ColumnSpan="2" Margin="50,10,167,36" Grid.RowSpan="4" TextWrapping="Wrap" Text="TextBox" Width="181" Height="243"/>
+        <Button x:Name="btn_Vysipat" Grid.Column="1" Content="Vysipat" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" Height="40" Width="100" Click="btn_Vysipat_Click" Margin="90,0,0,0"/>
+        <TextBox Name="txtbox2" Grid.Column="2" HorizontalAlignment="Left" Margin="62,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="243" Width="181" Grid.RowSpan="4" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
