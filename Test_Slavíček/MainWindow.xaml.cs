@@ -21,26 +21,24 @@ namespace Test_Slavíček
     public partial class MainWindow : Window
     {
         Nakladak Tatra;
+        Nakladak MAN;
 
         public MainWindow()
         {
             InitializeComponent();
             Tatra = new Nakladak();
-            Tatra.Jmeno = "tatra_Pavel";
+            Tatra.Jmeno = "Tatra";          
             Zobraz(Tatra, txtbox1);
-            
-            InitializeComponent();
-            Tatra = new Nakladak();
-            Tatra.Jmeno = "tara_ René";
-            Zobraz(Tatra, txtbox2);
 
-            
+            MAN = new Nakladak();
+            MAN.Jmeno = "MAN";
+            Zobraz(MAN, txtbox2);
         }
         public void Zobraz(Nakladak nakladak, TextBox textBox)
         {
             textBox.Text = "Jmeno: " + nakladak.Jmeno.ToString() + "\n";
             textBox.Text += "Spotřeba: " + nakladak.Spotreba.ToString() + "\n";
-            textBox.Text += "Stav Tachometru: " + nakladak.Stav_Tachometru.ToString() + ("\n");
+            textBox.Text += "Stav Tachometru: " + nakladak.Stav_tachometru.ToString() + ("\n");
             textBox.Text += "Naklad: " + nakladak.Naklad.ToString() + "\n";
             textBox.Text += "Stav Paliva: " + nakladak.Stav_Paliva.ToString() + ("\n");
             textBox.Text += "Nosnost: " + nakladak.Nosnost.ToString() + "\n";
@@ -78,26 +76,26 @@ namespace Test_Slavíček
 
         private void btnJet_2_Click(object sender, RoutedEventArgs e)
         {
-            Tatra.Jet();
-            Zobraz(Tatra, txtbox2);
+            MAN.Jet();
+            Zobraz(MAN, txtbox2);
         }
 
         private void btn_Natankovat_2_Click(object sender, RoutedEventArgs e)
         {
-            Tatra.Natanokovat();
-            Zobraz(Tatra, txtbox2);
+            MAN.Natanokovat();
+            Zobraz(MAN, txtbox2);
         }
 
         private void btn_Nalozit_2_Click(object sender, RoutedEventArgs e)
         {
-            Tatra.Nalozit();
-            Zobraz(Tatra, txtbox2);
+            MAN.Nalozit();
+            Zobraz(MAN, txtbox2);
         }
 
         private void btn_Vysipat_2_Click(object sender, RoutedEventArgs e)
         {
-            Tatra.Vysypat();
-            Zobraz(Tatra, txtbox2);
+            MAN.Vysypat();
+            Zobraz(MAN, txtbox2);
         }
     }
 

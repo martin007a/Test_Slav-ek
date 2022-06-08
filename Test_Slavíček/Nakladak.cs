@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Test_Slavíček
 {
-    
+
     public class Nakladak
     {
-        
+
         private int naklad;
         private int stav_paliva;
         private int stav_Tachometru;
         private int nosnost;
-        
+
         public string Jmeno { get; set; }
         public int Spotreba { get; set; }
         public int Naklad { get => naklad; }
         public int Stav_Paliva { get => stav_paliva; }
         public int Stav_tachometru { get => stav_Tachometru; }
         public int Nosnost { get => nosnost; }
-        public int Objem_Nadrze { get; set; }   
-        
+        public int Objem_Nadrze { get; set; }
+
         public Nakladak()
         {
             Jmeno = " ";
@@ -32,13 +32,13 @@ namespace Test_Slavíček
             stav_Tachometru = 0;
             nosnost = 3000;
             Objem_Nadrze = 75;
-           
+
         }
-       
-        public void Natanokovat(int stav_paliva)
+
+        public void Natanokovat()
         {
             stav_paliva += 15;
-            if (stav_paliva > Objem_Nadrze )
+            if (stav_paliva > Objem_Nadrze)
             {
                 stav_paliva = 75;
             }
@@ -48,7 +48,7 @@ namespace Test_Slavíček
             }
 
         }
-        public void Nalozit(int naklad )
+        public void Nalozit()
         {
             naklad += 500;
             if (naklad > nosnost)
@@ -56,7 +56,7 @@ namespace Test_Slavíček
                 naklad = 3000;
             }
         }
-        public void Jet( int stav_paliva )
+        public void Jet()
         {
             stav_paliva -= Spotreba + (naklad / 500);
             stav_Tachometru += 100;
@@ -65,27 +65,18 @@ namespace Test_Slavíček
                 stav_paliva = 0;
                 stav_Tachometru -= 100;
             }
-            if (stav_paliva < Spotreba)
-            {
-                stav_Tachometru -= 100;
-            }
-            
-          
-          
-          
-
 
         }
 
-        public void Vysypat(  )
+        public void Vysypat()
         {
             naklad = 0;
         }
+
         
 
-    }
-    
-    
+
+    } 
 
     
-}
+}    
