@@ -48,28 +48,32 @@ namespace Test_Slavíček
 
         }
 
-        private void btn_Tankovat_Click(object sender, RoutedEventArgs e)
-        {
-            Tatra.Natanokovat();
-            Zobraz (Tatra, txtbox1);
-        }
 
-        private void btn_Naložit_Click(object sender, RoutedEventArgs e)
-        {
-            Tatra.Nalozit();
-            Zobraz (Tatra, txtbox1);
-        }
+     
 
-        private void btn_Jet_Click(object sender, RoutedEventArgs e)
+        private void btn_Jet_1_Click(object sender, RoutedEventArgs e)
         {
+
             Tatra.Jet();
             Zobraz(Tatra, txtbox1);
         }
 
-        private void btn_Vysipat_Click(object sender, RoutedEventArgs e)
+        private void btn_Naložit_1_Click(object sender, RoutedEventArgs e)
+        {
+            Tatra.Nalozit();
+            Zobraz(Tatra, txtbox1);
+        }
+
+        private void btn_Tankovat_1_Click(object sender, RoutedEventArgs e)
+        {
+            Tatra.Natanokovat();
+            Zobraz(Tatra, txtbox1);
+        }
+
+        private void btn_Vysipat_1_Click(object sender, RoutedEventArgs e)
         {
             Tatra.Vysypat();
-            Zobraz(Tatra,txtbox1);
+            Zobraz(Tatra, txtbox1);
         }
     }
 
