@@ -19,7 +19,7 @@ namespace Test_Slavíček
         public int Spotreba { get; set; }
         public int Naklad { get => naklad; }
         public int Stav_Paliva { get => stav_paliva; }
-        public int Stav_Tachometru { get => stav_Tachometru; }
+        public int Stav_tachometru { get => stav_Tachometru; }
         public int Nosnost { get => nosnost; }
         public int Objem_Nadrze { get; set; }   
         
@@ -35,7 +35,7 @@ namespace Test_Slavíček
            
         }
        
-        public void Natanokovat()
+        public void Natanokovat(int stav_paliva)
         {
             stav_paliva += 15;
             if (stav_paliva > Objem_Nadrze )
@@ -48,7 +48,7 @@ namespace Test_Slavíček
             }
 
         }
-        public void Nalozit()
+        public void Nalozit(int naklad )
         {
             naklad += 500;
             if (naklad > nosnost)
@@ -56,7 +56,7 @@ namespace Test_Slavíček
                 naklad = 3000;
             }
         }
-        public void Jet()
+        public void Jet( int stav_paliva )
         {
             stav_paliva -= Spotreba + (naklad / 500);
             stav_Tachometru += 100;
@@ -65,6 +65,11 @@ namespace Test_Slavíček
                 stav_paliva = 0;
                 stav_Tachometru -= 100;
             }
+            if (stav_paliva < Spotreba)
+            {
+                stav_Tachometru -= 100;
+            }
+            
           
           
           
@@ -72,7 +77,7 @@ namespace Test_Slavíček
 
         }
 
-        public void Vysypat()
+        public void Vysypat(  )
         {
             naklad = 0;
         }

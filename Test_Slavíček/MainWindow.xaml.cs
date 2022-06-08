@@ -75,6 +75,30 @@ namespace Test_Slavíček
             Tatra.Vysypat();
             Zobraz(Tatra, txtbox1);
         }
+
+        private void btnJet_2_Click(object sender, RoutedEventArgs e)
+        {
+            Tatra.Jet();
+            Zobraz(Tatra, txtbox2);
+        }
+
+        private void btn_Natankovat_2_Click(object sender, RoutedEventArgs e)
+        {
+            Tatra.Natanokovat();
+            Zobraz(Tatra, txtbox2);
+        }
+
+        private void btn_Nalozit_2_Click(object sender, RoutedEventArgs e)
+        {
+            Tatra.Nalozit();
+            Zobraz(Tatra, txtbox2);
+        }
+
+        private void btn_Vysipat_2_Click(object sender, RoutedEventArgs e)
+        {
+            Tatra.Vysypat();
+            Zobraz(Tatra, txtbox2);
+        }
     }
 
 }

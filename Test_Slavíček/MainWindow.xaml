@@ -27,10 +27,10 @@
         <TextBox Name="txtbox1" Grid.ColumnSpan="2" Margin="45,16,180,13" Grid.RowSpan="3" TextWrapping="Wrap" Text="TextBox"/>
         <Button Name="btn_Vysipat_1" Grid.Column="1" Content="Vysipat" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" Height="40" Width="100" Margin="90,0,0,0" Click="btn_Vysipat_1_Click"/>
         <TextBox Name="txtbox2" Grid.Column="2" HorizontalAlignment="Left" Margin="62,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="200" Width="175" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
-        <Button Name="btnJet_2" Grid.Column="3" Content="Jet" Grid.Row="0" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100"/>
-        <Button Name="btn_Natankovat_2" Grid.Column="3" Content="Natankovat" Grid.Row="1" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100"/>
-        <Button Name="btn_Nalozit_2" Grid.Column="3" Content="Naložit" Grid.Row="2" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100"/>
-        <Button Name="btn_Vysipat_2" Grid.Column="3" Content="Vysypat" Grid.Row="3" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100"/>
+        <Button Name="btnJet_2" Grid.Column="3" Content="Jet" Grid.Row="0" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btnJet_2_Click"/>
+        <Button Name="btn_Natankovat_2" Grid.Column="3" Content="Natankovat" Grid.Row="1" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btn_Natankovat_2_Click"/>
+        <Button Name="btn_Nalozit_2" Grid.Column="3" Content="Naložit" Grid.Row="2" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btn_Nalozit_2_Click"/>
+        <Button Name="btn_Vysipat_2" Grid.Column="3" Content="Vysypat" Grid.Row="3" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btn_Vysipat_2_Click"/>
         
     </Grid>
 </Window>
