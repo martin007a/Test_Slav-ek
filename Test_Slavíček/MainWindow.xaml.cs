@@ -52,7 +52,7 @@ namespace Test_Slavíček
         private void btn_Jet_1_Click(object sender, RoutedEventArgs e)
         {
 
-            Tatra.Jet();
+            Tatra.Jet100KM();
             Zobraz(Tatra, txtbox1);
         }
 
@@ -76,7 +76,7 @@ namespace Test_Slavíček
 
         private void btnJet_2_Click(object sender, RoutedEventArgs e)
         {
-            MAN.Jet();
+            MAN.Jet100KM();
             Zobraz(MAN, txtbox2);
         }
 
@@ -95,6 +95,19 @@ namespace Test_Slavíček
         private void btn_Vysipat_2_Click(object sender, RoutedEventArgs e)
         {
             MAN.Vysypat();
+            Zobraz(MAN, txtbox2);
+        }
+
+        private void btn_jet_50KM_1_Click(object sender, RoutedEventArgs e)
+        {
+            Tatra.Jet50KM();
+            Zobraz(Tatra, txtbox1);
+  
+        }
+
+        private void btn_Jet_50KM_2_Click(object sender, RoutedEventArgs e)
+        {
+            MAN.Jet50KM();
             Zobraz(MAN, txtbox2);
         }
     }

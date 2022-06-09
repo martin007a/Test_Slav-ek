@@ -26,7 +26,7 @@ namespace Test_Slavíček
         public Nakladak()
         {
             Jmeno = " ";
-            Spotreba = 5; //100Km
+            Spotreba = 6; //100Km
             naklad = 0;
             stav_paliva = 30;
             stav_Tachometru = 0;
@@ -40,7 +40,7 @@ namespace Test_Slavíček
             stav_paliva += 15;
             if (stav_paliva > Objem_Nadrze)
             {
-                stav_paliva = 75;
+                stav_paliva = Objem_Nadrze;
             }
             if (stav_paliva < 0)
             {
@@ -53,10 +53,10 @@ namespace Test_Slavíček
             naklad += 500;
             if (naklad > nosnost)
             {
-                naklad = 3000;
+                naklad = nosnost;
             }
         }
-        public void Jet()
+        public void Jet100KM()
         {
             stav_paliva -= Spotreba + (naklad / 500);
             stav_Tachometru += 100;
@@ -67,6 +67,17 @@ namespace Test_Slavíček
             }
 
         }
+        public void Jet50KM()
+        {
+            stav_paliva -= Spotreba / 2 + (naklad / 500);
+            stav_Tachometru += 50;
+            if (stav_paliva < 0)
+            {
+                stav_paliva = 0;
+                stav_Tachometru -= 50;
+            }
+        }
+
 
         public void Vysypat()
         {

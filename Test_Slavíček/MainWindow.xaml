@@ -21,16 +21,18 @@
             <RowDefinition Height="72*"/>
             <RowDefinition Height="72*"/>
         </Grid.RowDefinitions>
-        <Button Name="btn_Jet_1" Content="Jet" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="100"  Grid.Column="1" Margin="90,22,0,0" Click="btn_Jet_1_Click"/>
-        <Button Name="btn_Naložit_1" Grid.Column="1" Content="Naložit" Height="40" Grid.Row="1" VerticalAlignment="Top"  Margin="90,12,10,0" Click="btn_Naložit_1_Click"/>
-        <Button Name="btn_Tankovat_1" Grid.Column="1" Content="Natankovat" HorizontalAlignment="Left" Height="40" Grid.Row="2" VerticalAlignment="Center" Width="100"  Margin="90,0,0,0" Click="btn_Tankovat_1_Click"/>
+        <Button Name="btn_Jet_100KM_1" Content="Jet 100KM" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="100"  Grid.Column="1" Margin="90,22,0,0" Click="btn_Jet_1_Click"/>
+        <Button Name="btn_Naložit_1" Content="Naložit" Height="40" Grid.Row="3" VerticalAlignment="Center"  Margin="90,0,10,0" Click="btn_Naložit_1_Click" Grid.Column="1"/>
+        <Button Name="btn_Tankovat_1" Grid.Column="1" Content="Natankovat" HorizontalAlignment="Left" Height="40" Grid.Row="2" VerticalAlignment="Top" Width="100"  Margin="90,17,0,0" Click="btn_Tankovat_1_Click"/>
         <TextBox Name="txtbox1" Grid.ColumnSpan="2" Margin="45,16,180,13" Grid.RowSpan="3" TextWrapping="Wrap" Text="TextBox"/>
-        <Button Name="btn_Vysipat_1" Grid.Column="1" Content="Vysipat" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" Height="40" Width="100" Margin="90,0,0,0" Click="btn_Vysipat_1_Click"/>
+        <Button Name="btn_Vysipat_1" Grid.Column="1" Content="Vysyipat" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Center" Height="40" Width="100" Margin="90,0,0,0" Click="btn_Vysipat_1_Click"/>
         <TextBox Name="txtbox2" Grid.Column="2" HorizontalAlignment="Left" Margin="62,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="200" Width="175" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
-        <Button Name="btnJet_2" Grid.Column="3" Content="Jet" Grid.Row="0" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btnJet_2_Click"/>
-        <Button Name="btn_Natankovat_2" Grid.Column="3" Content="Natankovat" Grid.Row="1" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btn_Natankovat_2_Click"/>
-        <Button Name="btn_Nalozit_2" Grid.Column="3" Content="Naložit" Grid.Row="2" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btn_Nalozit_2_Click"/>
-        <Button Name="btn_Vysipat_2" Grid.Column="3" Content="Vysypat" Grid.Row="3" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btn_Vysipat_2_Click"/>
-        
+        <Button Name="btnJet_100KM_2" Grid.Column="3" Content="Jet 100KM" Grid.Row="0" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btnJet_2_Click"/>
+        <Button Name="btn_Natankovat_2" Grid.Column="3" Content="Natankovat" Grid.Row="2" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btn_Natankovat_2_Click"/>
+        <Button Name="btn_Nalozit_2" Grid.Column="3" Content="Naložit" Grid.Row="3" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btn_Nalozit_2_Click"/>
+        <Button Name="btn_Vysipat_2" Grid.Column="3" Content="Vysypat" Grid.Row="4" HorizontalAlignment="Left" Height="40" Margin="71,0,0,0" VerticalAlignment="Center" Width="100" Click="btn_Vysipat_2_Click"/>
+        <Button Name="btn_jet_50KM_1" Grid.Column="1" Content="Jet 50KM" HorizontalAlignment="Left" Height="40" Margin="90,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="100" Click="btn_jet_50KM_1_Click"/>
+        <Button Name="btn_Jet_50KM_2" Grid.Column="3" Content="Jet 50KM" HorizontalAlignment="Left" Height="40" Margin="71,14,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Click="btn_Jet_50KM_2_Click"/>
+
     </Grid>
 </Window>
