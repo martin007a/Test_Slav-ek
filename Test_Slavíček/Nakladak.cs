@@ -26,7 +26,7 @@ namespace Test_Slavíček
         public Nakladak()
         {
             Jmeno = " ";
-            Spotreba = 6; //100Km
+            Spotreba = 6; //100Km :)
             naklad = 0;
             stav_paliva = 30;
             stav_Tachometru = 0;
